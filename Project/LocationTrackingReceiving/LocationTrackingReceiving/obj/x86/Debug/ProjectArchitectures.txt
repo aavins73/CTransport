@@ -1,0 +1,1 @@
+C:\Users\mypc\Documents\Visual Studio 2013\Projects\LocationTrackingReceiving\LocationTrackingReceiving\LocationTrackingReceiving.csproj;x86

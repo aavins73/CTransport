@@ -1,0 +1,22 @@
+Push
+-----
+1. Current date & time
+2. Route Number
+3. Driver Details
+4. Bus Number
+5. Logitude & latitude
+
+Success
+
+Pull 
+---------------------
+1. Date
+2. Route Number
+
+yyyymmdd,routenumner,driverid,busnumber,long,lat
+
+
+
+my tasks
+
+UI

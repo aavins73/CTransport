@@ -1,0 +1,42 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RouteList"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Dom="using:Windows.Data.Xml.Dom"
+    xmlns:Assets="using:CTransport.Assets"
+    x:Class="RouteList.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" AllowDrop="True">
+   
+    <Grid>
+        <ComboBox x:ConnectionId='1'  x:Name="cboRoute" ItemsSource="{Binding}" 
+                  PlaceholderText="Choose Route"  FontSize="10" 
+                  IsEnabled="True"
+                  HorizontalAlignment="Left" Margin="32,26,0,0" VerticalAlignment="Top" Width="163"
+                                                              >
+        </ComboBox>
+        <TextBlock x:Name="resultTextBlock" FontSize="16" HorizontalAlignment="Left" Margin="32,237,0,0" 
+                   TextWrapping="Wrap" Text="" VerticalAlignment="Top" Height="351" Width="337"/>
+        <Button x:ConnectionId='2' Content="Search" HorizontalAlignment="Left" Margin="240,36,0,0" VerticalAlignment="Top" 
+                                    />
+        <!-- <TextBox x:Name="Location" IsTextPredictionEnabled="True" HorizontalAlignment="Left" 
+                 Margin="106,125,0,0" 
+                 TextWrapping="Wrap" 
+                  Text="{Binding}"  VerticalAlignment="Top" TextChanged="Location_TextChanged"/> -->
+        <AutoSuggestBox x:ConnectionId='3' x:Name="Location1" PlaceholderText="choseeloc"
+                        ItemsSource="{Binding}"
+                        HorizontalAlignment="Left" 
+                                                             
+                        
+                        Margin="32,98,0,0" 
+                        VerticalAlignment="Top" Width="163"/>
+      <!--  <ListBox x:Name="Loc" ItemsSource="{Binding}" HorizontalAlignment="Left" 
+                 Height="31" Margin="95,178,0,0" VerticalAlignment="Top"
+                 
+                 Width="73" SelectionChanged="Loc_SelectionChanged"/> -->
+
+    </Grid>
+</Page>
+

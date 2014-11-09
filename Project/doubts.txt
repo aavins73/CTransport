@@ -1,0 +1,19 @@
+Put in Github or some share path as backup
+webservice or Equivalent and its deployment in Cloud or my laptop
+Checking in Device(Have to see Microsoft vs developer account)
+put locationtracking receiving and send alert in MenuLayout
+Real Time Checking of functionality in Device
+background access
+Timer
+backbutton
+UI Redesigning
+DB where should it go & SQLite Error  --  Have tried to create Db Externally and update through ISOTOOL.EXE from CMD prompt .. Takes care of error
+
+
+
+
+
+
+
+
+

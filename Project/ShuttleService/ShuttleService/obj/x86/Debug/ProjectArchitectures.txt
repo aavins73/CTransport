@@ -1,0 +1,1 @@
+C:\Users\mypc\Desktop\Project\ShuttleService\ShuttleService\ShuttleService.csproj;x86
