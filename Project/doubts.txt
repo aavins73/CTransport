@@ -1,12 +1,14 @@
-Put in Github or some share path as backup
+Put in Github or some share path as backup - DONE
 webservice or Equivalent and its deployment in Cloud or my laptop
 Checking in Device(Have to see Microsoft vs developer account)
+Map token needed or not
 put locationtracking receiving and send alert in MenuLayout
-Real Time Checking of functionality in Device
+Real Time Checking of functionality in ASV office
+UI Redesigning
 background access
 Timer
 backbutton
-UI Redesigning
+Battery in my laptop to be set 100%
 DB where should it go & SQLite Error  --  Have tried to create Db Externally and update through ISOTOOL.EXE from CMD prompt .. Takes care of error
 
 
@@ -16,4 +18,8 @@ DB where should it go & SQLite Error  --  Have tried to create Db Externally and
 
 
 
+Not so important doubts
 
+1. Unit test cases n methods
+2. Login how it works
+3. checking through APP Store

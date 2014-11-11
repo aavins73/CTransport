@@ -8,20 +8,27 @@ ISETool.exe ts xd 5a07fe99-b601-47d2-b29b-d84cbbe70cb3 C:\Data\myfiles
 
 Command to put db into isolated storage
 
-ISETool.exe rs xd 5a07fe99-b601-47d2-b29b-d84cbbe70cb3 C:\Data\myfiles\IsolatedStore
+ISETool.exe rs xd 785334bc-bdfd-40cd-8c59-a7f9437bfa27 C:\Data\myfiles\IsolatedStore
 
 
 
 SQLite Insert Command
 
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(1,'G01','Tambaram-MCC', '08:00 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(2,'G01','Medavakkam', '08:25 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(3,'G01','Velachery', '08:45 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(4,'G02','T.Nagar', '07:55 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(5,'G02','Saidapet', '08:15 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(6,'G02','VijayaNagar', '08:35 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(7,'G03','Santhome', '08:00 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(8,'G03','Adayar', '08:20 AM','GMR' ,'09:00 AM');
-INSERT INTO LocationSearch (ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(9,'G03','TidelPark', '08:40 AM','GMR' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(10,'A01','Tambaram-MCC', '08:00 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(11,'A01','Medavakkam', '08:25 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(12,'A01','Velachery', '08:45 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(13,'A02','T.Nagar', '07:55 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(14,'A02','Saidapet', '08:15 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(15,'A02','VijayaNagar', '08:35 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(16,'A03','Santhome', '08:00 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(17,'A03','Adayar', '08:20 AM','ASV' ,'09:00 AM');
+INSERT INTO LocationSearchRte(ID,RouteNo,BoardLocation,BoardTime,EndLocation,DropTime) VALUES(18,'A03','TidelPark', '08:40 AM','ASV' ,'09:00 AM');
 
-SQLite Db Creation
+
+SQLite Table Creation
+
+CREATE TABLE IF NOT EXISTS ShuttleSearch(ID INT PrimaryKey [AutoIncrement] [NotNull], UserName string, Password string);
+
+CREATE TABLE IF NOT EXISTS ShuttleSearch(ID INTEGER PRIMARY KEY AUTOINCREMENT, RouteNo string, Location string);
+
+
